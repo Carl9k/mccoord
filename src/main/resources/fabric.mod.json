@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "mccoord",
+  "version": "${version}",
+
+  "name": "Minecraft Coordinates",
+  "description": "This mod displays coordinates on the Minecraft HUD.",
+  "authors": [
+    "Carl9k"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Carl9k/mccoord",
+    "sources": "https://github.com/Carl9k/mccoord"
+  },
+
+  "license": "MIT",
+  "icon": "assets/mccoord/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.carl9k.mccoord.Coordinates"
+    ]
+  },
+  "mixins": [
+    "mccoord.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  }
+}
